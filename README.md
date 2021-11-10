@@ -2,8 +2,8 @@
 This is the source code to an API that manages tutor sessions in a school's tutoring lab.
 # File Structure
 - The  `school` folder is actually a virtual environment that contains an installed version of `python`, `django` and all other dependencies.
-- The `schoolManager` folder is the django project folder, it contains the `settings.py` and `urls.py`
-- The `institution` folder houses the files for the institution app. Here the `models.py` file contains the model classes for each entity.
+- The `school\schoolManager` folder is the django project folder, it contains the project settings file `settings.py` and the `urls.py` that contains the url routes.
+- The `school\institution` folder houses the files for the __institution__ app. Here the `models.py` file contains the model classes for each entity. The `serializers.py` file, defines how the data should be serialized, in this case, the JSON format. The `views.py` file contains the class based views that handles CRUD operations for each entity. The `urls.py` file binds the routes/__endpoints__ to its respective view class.
 # Running the Project
 1. Download or clone the repository to your local machine.
 2. In your terminal navigate to the location of the school folder. This should look something like `root@jowzaiah:/mnt/c/downloads/tutorsession/school$` for __(Mac & Linux)__. 
